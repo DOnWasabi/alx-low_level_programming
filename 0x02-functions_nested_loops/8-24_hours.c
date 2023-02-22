@@ -10,7 +10,7 @@ void jack_bauer(void)
 
 	for (p = 0; p <= 2; p++)
 	{
-		for (q = 0; q <= 3; q++)
+		for (q = 0; q <= 9; q++)
 		{
 			for (r = 0; r <= 5; r++)
 			{

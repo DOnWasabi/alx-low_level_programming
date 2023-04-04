@@ -9,19 +9,11 @@
 size_t listint_len(const listint_t *h)
 {
 	size_t count = 0;
-	listint_t *temp;
 
-	temp = malloc(sizeof(listint_t));
-	if (temp == NULL)
-	return (0);
-
-	temp->next = (listint_t *) h;
-	while (temp->next != NULL)
+	while (h != NULL)
 	{
 		count++;
-		temp = temp->next;
+		h = h->next;
 	}
-
-	free(temp);
 	return (count);
 }
